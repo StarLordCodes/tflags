@@ -6,7 +6,7 @@ pub struct TFlags {
 
 impl TFlags {
     pub fn parse() -> Self {
-        let input_args: Vec<String> = std::env::args().collect();
+        let input_args: Vec<String> = std::env::args().skip(1).collect();
         let (flags, args) = get_flags_args(&input_args);
         return TFlags { flags, args };
     }
