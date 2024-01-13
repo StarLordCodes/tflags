@@ -1,4 +1,4 @@
-struct TFlags {
+pub struct TFlags {
     flags: Vec<String>,
     args: Vec<String>,
 }
