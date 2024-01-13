@@ -1,6 +1,7 @@
+#[derive(Debug, Clone)]
 pub struct TFlags {
-    flags: Vec<String>,
-    args: Vec<String>,
+    pub flags: Vec<String>,
+    pub args: Vec<String>,
 }
 
 impl TFlags {
